@@ -4,6 +4,9 @@ export default {
   "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {},
+    fontFamily:{
+      signature :['Great Vibes'] ,
+    } , //15:30
   },
   plugins: [],
 }
