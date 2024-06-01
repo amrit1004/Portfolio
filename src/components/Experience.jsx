@@ -1,5 +1,5 @@
 import React from "react";
-
+import python from '../assets/python.png'
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -8,7 +8,9 @@ import nextjs from "../assets/nextjs.png";
 import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
-
+import mongodb from '../assets/mongoDb.jpg'
+import express from '../assets/express.png'
+import cpp from '../assets/cpp.png'
 const Experience = () => {
   const techs = [
     {
@@ -59,22 +61,47 @@ const Experience = () => {
       title: "GitHub",
       style: "shadow-gray-400",
     },
+    {
+      id: 9,
+      src: mongodb,
+      title: "MongoDb",
+      style: "shadow-green-400",
+    } ,
+    {
+      id: 10,
+      src: express,
+      title: "Express",
+      style: "shadow-white",
+    } ,
+    {
+      id: 11,
+      src: python,
+      title: "Python",
+      style: "shadow-green-400",
+    } ,
+    {
+      id: 12,
+      src: cpp,
+      title: "C++",
+      style: "shadow-green-400",
+    } ,
+    
   ];
 
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto text-white">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+          <p className="inline p-2 text-4xl font-bold border-b-4 border-gray-500">
             Experience
           </p>
           <p className="py-6">These are the technologies I've worked with</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="grid w-full grid-cols-2 gap-8 px-12 py-8 text-center sm:grid-cols-3 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}

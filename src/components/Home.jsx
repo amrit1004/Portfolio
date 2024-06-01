@@ -1,5 +1,5 @@
 import React from 'react'
-import  HeroImage from '../assets/heroImage.png'
+import  HeroImage from '../assets/he.jpg'
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from 'react-scroll';
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <img src= {HeroImage} alt= "my profile" className='w-2/3 mx-auto rounded-2xl md:w-full'/>
+          <img src= {HeroImage} alt= "my profile" className='mx-auto w-[300px] h-[400px] rounded-2xl md:w-[500px]'/>
         </div>
        </div>
     </div>
